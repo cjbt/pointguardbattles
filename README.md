@@ -1,2 +1,2 @@
 # pointguardbattles
-Practce. Practice.. Talkin about pracitce..! This game was made for javascript class practice.
+Practce. Practice.. We're talkin about pracitce..! NOT THE GAME! Not this game that was made for me to practice javascript classes.
