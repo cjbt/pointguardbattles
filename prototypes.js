@@ -127,7 +127,7 @@ class Hero extends Humanoid {
       this.score += 3;
       document.getElementById(
         "playbyplay"
-      ).innerHTML = `<p>Curry, walking pass half-court... Shoots out of nowhere and scores! 3 points!</p>`;
+      ).innerHTML = `<p>Curry, walking past half-court... Shoots out of nowhere and scores! 3 points!</p>`;
       document.getElementById("curryscore").innerHTML = this.score;
   
       // increases field goal made in play by play
