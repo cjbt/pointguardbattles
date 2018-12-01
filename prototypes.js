@@ -62,6 +62,8 @@ class Villain extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
+    } else {
+      return;
     }
     if (this.score >=21 && this.score <=23) {
       document.getElementById(
@@ -94,6 +96,8 @@ class Villain extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
+    } else {
+      return;
     }
 
     if (this.score >=21 && this.score <=23) {
@@ -163,6 +167,8 @@ class Hero extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
+    } else {
+      return;
     }
     if (this.score >=21 && this.score <=23) {
       document.getElementById(
@@ -193,11 +199,13 @@ class Hero extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
+    } else {
+      return;
     }
     if (this.score >=21 && this.score <=23) {
       document.getElementById(
         "playbyplay"
-      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+      ).innerHTML = `<p style="color: red;">CURRY IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
     }
   };
 
@@ -224,6 +232,8 @@ class Hero extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
+    } else {
+      return;
     }
     if (this.score >=21 && this.score <=23) {
       document.getElementById(
