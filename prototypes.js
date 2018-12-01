@@ -238,7 +238,7 @@ class Hero extends Humanoid {
     if (this.score >=21 && this.score <=23) {
       document.getElementById(
         "playbyplay"
-      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+      ).innerHTML = `<p style="color: red;">CURRY IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
     }
   };
 }
