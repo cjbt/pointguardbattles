@@ -41,7 +41,7 @@ class Villain extends Humanoid {
     super(villainAttributes);
   }
   flopAndOne() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (chefCurry.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 2;
       document.getElementById(
         "playbyplay"
@@ -63,10 +63,15 @@ class Villain extends Humanoid {
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
     }
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+    }
   };
 
   stepBackCrossoverJumber() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (chefCurry.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 3;
       document.getElementById(
         "playbyplay"
@@ -80,6 +85,7 @@ class Villain extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
+      
     } else {
       document.getElementById(
         "playbyplay"
@@ -89,9 +95,15 @@ class Villain extends Humanoid {
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
     }
+
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+    }
   };
   tomohawkDunk() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (chefCurry.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 3;
       document.getElementById(
         "playbyplay"
@@ -114,6 +126,12 @@ class Villain extends Humanoid {
       this.fga++;
       document.getElementById("beardfga").innerHTML = this.fga;
     }
+
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+    }
   };
 }
 
@@ -123,7 +141,7 @@ class Hero extends Humanoid {
     super(heroAttributes);
   }
   pullUpFromHalfCourt() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (theBeard.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 3;
       document.getElementById(
         "playbyplay"
@@ -146,9 +164,14 @@ class Hero extends Humanoid {
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
     }
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">CURRY IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+    }
   };
   stepBackJumper() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (theBeard.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 3;
       document.getElementById(
         "playbyplay"
@@ -171,10 +194,15 @@ class Hero extends Humanoid {
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
     }
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
+    }
   };
 
   floater() {
-    if (Math.floor(Math.random() * 10) + 1 < 6) {
+    if (theBeard.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 2;
       document.getElementById(
         "playbyplay"
@@ -196,6 +224,11 @@ class Hero extends Humanoid {
       // increases field goal attempts in play by play
       this.fga++;
       document.getElementById("stephfga").innerHTML = this.fga;
+    }
+    if (this.score >=21 && this.score <=23) {
+      document.getElementById(
+        "playbyplay"
+      ).innerHTML = `<p style="color: red;">HARDEN IS THE WINNER</br></br> <a href="index.html">Play Again?</a></p>`;
     }
   };
 }
