@@ -254,6 +254,16 @@ let fieldgoalzero = ()=> {
       "playbyplay"
     ).innerHTML = `<p style="color: maroon;">Let's Play! </br>
     Click on a move.</p>`;
+
+
+    // zero scoreboard
+
+    document.getElementById(
+      "curryscore"
+    ).innerHTML = '0'
+    document.getElementById(
+      "hardenscore"
+    ).innerHTML = '0'
   } 
 }
 
