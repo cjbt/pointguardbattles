@@ -1,5 +1,3 @@
-
-
 class GameObject {
   constructor(gameAttributes) {
     this.createdAt = gameAttributes.createdAt;
@@ -232,3 +230,29 @@ const chefCurry = new Hero({
   weapons: ["Pull Up From Halfcourt"],
   language: "Common Tongue"
 });
+
+// when page loads, counts current score til someone wins then winner is declared.
+
+let fieldgoalzero = ()=> {
+  if (theBeard.fgm === 0 && theBeard.fga === 0 &&
+      chefCurry.fgm === 0 && chefCurry.fga === 0) {
+    document.getElementById(
+      "stephfgm"
+    ).innerHTML = '0'
+    document.getElementById(
+      "stephfga"
+    ).innerHTML = '0'
+    document.getElementById(
+      "beardfgm"
+    ).innerHTML = '0'
+    document.getElementById(
+      "beardfga"
+    ).innerHTML = '0'
+    document.getElementById(
+      "playbyplay"
+    ).innerHTML = `<p style="color: maroon;">Let's Play! </br>
+    Click on a move.</p>`;
+  } 
+}
+
+
