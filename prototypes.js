@@ -59,7 +59,9 @@ class Villain extends Humanoid {
         "playbyplay"
       ).innerHTML = `<p style="color: red;">Harden just did not sell his flop very well.</p>`;
   
-      // does not increase fga due to nba rules
+      // increases field goal attempts in play by play
+      this.fga++;
+      document.getElementById("beardfga").innerHTML = this.fga;
     }
   };
 
