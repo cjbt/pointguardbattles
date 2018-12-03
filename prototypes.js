@@ -72,7 +72,7 @@ class Villain extends Humanoid {
     }
   };
 
-  stepBackCrossoverJumber() {
+  stepBackCrossoverJumper() {
     if (chefCurry.score < 21 && this.score < 21 && Math.floor(Math.random() * 10) + 1 < 6) {
       this.score += 3;
       document.getElementById(
